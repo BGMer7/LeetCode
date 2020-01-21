@@ -35,7 +35,7 @@ main()
     vector<int> nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
     ListNode *numsList = new ListNode(nums.back());
     nums.pop_back();
-    numsList ->next = new ListNode(nums.back());
+    numsList->next = new ListNode(nums.back());
     nums.pop_back();
     numsList->next = new ListNode(nums.back());
     nums.pop_back();
