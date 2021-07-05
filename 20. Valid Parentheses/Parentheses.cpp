@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <string>
 using namespace std;
 
 class Solution
@@ -37,10 +38,34 @@ private:
     }
 };
 
+class SolutionStack
+{
+private:
+    stack<char> stackChar;
+
+public:
+    bool isValid(string s)
+    {
+        for (int i = 0; i < s.size(); i++)
+        {
+            char c = s[i];
+            if (c == '{' || c == '(' || c == '[')
+                stackChar.push(c);
+            else if (stackChar.empty())
+                return false; // if after the first element travesed, the stack still empty, means the first element is illegal
+            else if ((c == '}' && stackChar.top() == '{') || (c == ']' && stackChar.top() == '[') || (c == ')' && stackChar.top() == '('))
+                stackChar.pop();
+            else
+                return false;
+        }
+        return stackChar.empty();
+    }
+};
+
 main()
 {
-    string s = "{}[]";
-    Solution sol;
+    string s = "}";
+    SolutionStack sol;
     bool res;
     res = sol.isValid(s);
     cout << res << endl;
