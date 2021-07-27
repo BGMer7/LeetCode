@@ -32,6 +32,29 @@ public:
     }
 };
 
-int main()
+class SolutionRecur
 {
-}
+public:
+    vector<int> inorderTraversal(TreeNode *root)
+    {
+        if (!root)
+            return {};
+        stack<TreeNode *> s;
+        vector<int> res;
+        while (root || !s.empty())
+        {
+            while (root)
+            {
+                s.push(root);
+                root = root->left;
+            }
+            root = s.top();
+            res.push_back(root->val);
+            s.pop();
+            root = root->right;
+        }
+        return res;
+    }
+};
+
+int main() {}

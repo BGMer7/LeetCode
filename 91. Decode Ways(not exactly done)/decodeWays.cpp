@@ -32,3 +32,5 @@ public:
         return dp[n];
     }
 };
+
+int main() {}
