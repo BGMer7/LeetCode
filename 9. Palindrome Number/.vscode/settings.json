@@ -1,7 +1,7 @@
 {
-    "files.associations": {
-        "*.py": "python",
-        "iostream": "cpp",
-        "iosfwd": "cpp"
-    }
+  "files.associations": {
+    "*.py": "python",
+    "iostream": "cpp",
+    "iosfwd": "cpp"
+  }
 }

@@ -1,11 +1,11 @@
 {
-    "files.associations": {
-        "*.py": "python",
-        "*.cjson": "jsonc",
-        "*.wxss": "css",
-        "*.wxs": "javascript",
-        "xstring": "cpp",
-        "vector": "cpp",
-        "xhash": "cpp"
-    }
+  "files.associations": {
+    "*.py": "python",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "xstring": "cpp",
+    "vector": "cpp",
+    "xhash": "cpp"
+  }
 }
