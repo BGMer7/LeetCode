@@ -58,8 +58,10 @@
     "xstddef": "cpp",
     "xtr1common": "cpp",
     "bitset": "cpp",
-    "string_view": "cpp"
+    "string_view": "cpp",
+    "random": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
-  "editor.suggest.snippetsPreventQuickSuggestions": false
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "aiXcoder.showTrayIcon": true
 }

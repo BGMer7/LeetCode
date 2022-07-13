@@ -12,5 +12,6 @@ public:
             return word;
 
         reverse(word.begin(), word.begin() + index);
+        return word;
     }
 };
